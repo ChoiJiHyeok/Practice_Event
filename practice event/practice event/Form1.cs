@@ -19,6 +19,16 @@ namespace practice_event
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Publisher pub = new Publisher();
+
+            Subscriber sub = new Subscriber();
+
+            pub.ShowName += sub.DisplayName;
+            pub.ShowNum += sub.DisPlayNum;
+
+            pub.RaiseIntEvent(3);
+
+            pub.RaiseEvent("ENC");
 
         }
     }
